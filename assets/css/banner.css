@@ -1,0 +1,36 @@
+.banner {
+    height: 100vh;
+    background-image: url(../imgs/background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.banner-text .subtitle {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    width: 24rem;
+    font-weight: 400;
+}
+
+.banner-text .title {
+    font-family: var(--font-title);
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-top: 21px;
+}
+
+.banner-text .text {
+    font-size: 1.6rem;
+    margin-top: 1.9rem;
+    width: 34rem;
+}
+
+.banner-text .button {
+    margin-top: 2.8rem;
+}
