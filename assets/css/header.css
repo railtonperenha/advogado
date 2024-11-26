@@ -2,6 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 8rem;
 }
 
 .navbar {
@@ -12,7 +13,7 @@ header {
     justify-content: space-between;
 }
 
-.logo a img {
+.logo img {
     width: 5rem;
     transition: all ease 0.5s;
 }
@@ -59,4 +60,38 @@ header nav a:hover {
 
 header nav.opened {
     display: flex;
+}
+
+/* RESPONSIVIDADE */
+@media (width > 900px) {
+
+    header {
+        flex-direction: row;
+        padding: 0 15rem;
+    }
+
+    header > .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .logo img {
+        width: 6.4rem;
+    }
+
+    .menu-opener {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav a {
+        font-size: 1.6rem;
+    }
+
 }

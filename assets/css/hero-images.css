@@ -1,0 +1,25 @@
+.hero-images {
+    padding: 6rem;
+}
+
+.images .image img {
+    width: 30.3rem;
+}
+
+.text-image .title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    font-weight: bold;
+
+}
+
+.text-image .describe {
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    margin-top: 2.1rem;
+}
+
+.text-image .button button {
+    margin: 3rem 0;
+}

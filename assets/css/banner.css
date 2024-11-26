@@ -14,8 +14,10 @@
 .banner-text .subtitle {
     font-family: var(--font-title);
     font-size: 2rem;
-    width: 24rem;
+    width: 30rem;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
 }
 
 .banner-text .title {
@@ -33,4 +35,36 @@
 
 .banner-text .button {
     margin-top: 2.8rem;
+}
+
+.banner-text .button button {
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.banner-text .button button:hover {
+    background-color: #8ec8ff;
+}
+
+/* RESPONSIVIDADE */
+@media (width > 600px) {
+    .banner-text .title {
+        font-size: 6rem;
+    }
+
+    .banner-text .text {
+        font-size: 1.8rem;
+        width: 70.18rem;
+    }
+}
+
+@media (width > 900px) {
+
+    .banner {
+        padding: 0 18rem;
+    }
+
+    .banner-text .title {
+        width: 90.45rem;
+    }
 }
