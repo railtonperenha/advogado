@@ -1,5 +1,4 @@
 .hero {
-    height: 90vh;
     padding: 6rem;
 }
 
@@ -22,7 +21,7 @@
 .text-hero .title {
     font-family: var(--font-title);
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     width: 30.4rem;
     margin-top: 2.1rem;
 }
@@ -35,4 +34,72 @@
     text-align: justify;
     margin-top: 2.1rem;
     margin-bottom: 6rem;
+}
+
+/* IMAGENS */
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.images .image img {
+    width: 30.3rem;
+}
+
+.text-image .title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    font-weight: bold;
+
+}
+
+.text-image .describe {
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    margin-top: 2.1rem;
+}
+
+.text-image .button button {
+    margin: 3rem 0;
+}
+
+/* RESPONSIVIDADE */
+@media (width > 600px) {
+    .text-hero .subtitle {
+        width: 44.1rem;
+        margin-top: 8rem;
+    }
+
+    .text-hero p.title {
+        font-size: 4rem;        
+        font-weight: 500;
+        width: 72rem;
+    }
+
+    .text-hero .text {
+        font-size: 1.8rem;
+        text-wrap: wrap;
+        width: 72rem;
+    }
+
+    /* IMAGENS */
+    .images .image img {
+        width: 100%;
+    }
+
+    .text-hero .title, .text-image .describe {
+        font-size: 1.8rem;
+    }
+
+
+}
+
+@media (width > 900px) {
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
 }
