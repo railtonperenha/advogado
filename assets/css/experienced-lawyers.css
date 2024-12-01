@@ -1,6 +1,7 @@
 .experienced-lawyers {
     width: 100%;
     margin-top: 3rem;
+    padding: 1.5rem 0;
     background-color: var(--gray-person);
     
 }
