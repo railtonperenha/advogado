@@ -1,7 +1,12 @@
 .experienced-lawyers {
-    height: 50.1rem;
-    padding: 6rem;
+    width: 100%;
+    margin-top: 3rem;
     background-color: var(--gray-person);
+    
+}
+
+.experienced-lawyers-text {
+    width: 100%;
     margin: auto;
 }
 
@@ -9,15 +14,16 @@
     font-family: var(--font-title);
     font-size: 2rem;
     text-transform: uppercase;
-    line-height: 2.6rem;
-    width: 34rem;
+    width: 90%;
+    margin: auto;
 }
 
 .experienced-lawyers-text .title {
     font-family: var(--font-title);
     font-size: 3rem;
     line-height: 3rem;
-    width: 34rem;
+    width: 90%;
+    margin: auto;
     margin-top: 2.1rem;
 }
 
@@ -25,32 +31,23 @@
     font-family: var(--font-text);
     font-size: 1.6rem;
     text-align: justify;
-    margin-top: 1.8rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.1rem;
+    line-height: 2.3rem;
 }
 
 /* RESPONSIVE */
 @media (width > 600px) {
 
-    .experienced-lawyers {
-        width: 82rem;
-        height: 40.4rem;
-        background-color: aqua;
-    }
-    .experienced-lawyers-text .subtitle {
-        font-size: 2rem;
-        width: 39rem;
-        letter-spacing: 0.1rem;
-    }
-    
     .experienced-lawyers-text .title {
         font-size: 4.8rem;
-        line-height: 5rem;
+        line-height: 4.5rem;
         font-weight: 400;
-        width: 72rem;
     }
 
     .experienced-lawyers-text .description {
-        width: 72rem;
+        font-size: 1.8rem;
     }
 
 }

@@ -7,33 +7,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 6rem;
+    height: 80vh;
+}
+
+.banner-text {
+    width: 100%;
+    margin: auto;
 }
 
 .banner-text .subtitle {
     font-family: var(--font-title);
     font-size: 2rem;
-    width: 30rem;
+    width: 90%;
+    margin: auto;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
+    
 }
 
 .banner-text .title {
     font-family: var(--font-title);
     font-size: 3.6rem;
     font-weight: 700;
-    margin-top: 21px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.1rem;
 }
 
 .banner-text .text {
     font-size: 1.6rem;
     margin-top: 1.9rem;
-    width: 34rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.1rem;
+    line-height: var(--line-height);
 }
 
 .banner-text .button {
-    margin-top: 2.8rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.1rem;
 }
 
 .banner-text .button button {
@@ -45,25 +59,37 @@
     background-color: #8ec8ff;
 }
 
-/* RESPONSIVIDADE */
-@media (width > 600px) {
+/* RESPONSIVE TABLET */
+@media (min-width: 600px) {
+
+    .banner {
+        height: 80vh;
+    }
+
+    .banner-text .subtitle {
+        font-size: 2.8rem;
+    }
+
     .banner-text .title {
         font-size: 6rem;
+        font-weight: 600;
     }
 
     .banner-text .text {
-        font-size: 1.8rem;
-        width: 70.18rem;
+        font-size: 2rem;
+        font-weight: normal;
     }
 }
 
-@media (width > 900px) {
+/* RESPONSIVE PC */
+@media (min-width: 1200px) {
 
     .banner {
-        padding: 0 18rem;
+        height: 90vh;
     }
 
-    .banner-text .title {
-        width: 90.45rem;
+    .banner-text {
+        width: 80%;
+        margin: 0;
     }
 }

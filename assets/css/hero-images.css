@@ -1,13 +1,24 @@
 .hero-images {
-    padding: 6rem;
+    width: 100%;
+    margin-top: 6rem;
+    
 }
 
 .images {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
 }
+
+.images .image {
+    width: 100%;
+    margin: auto;
+    
+}
+
 .images .image img {
-    width: 30.3rem;
+    width: 100%;
 }
 
 .text-image .title {
@@ -24,15 +35,16 @@
     margin-top: 2.1rem;
 }
 
-.text-image .button button {
+.text-image .button {
     margin: 3rem 0;
 }
 
-/* RESPONSIVE */
-@media (width > 600px) {
-    /* IMAGENS */
-    .images .image img {
-        width: 100%;
+/* RESPONSIVE TABLET */
+@media (min-width: 600px) {
+
+    .hero-images {
+        margin-top: 6rem;
+
     }
 
     .text-hero .title, .text-image .describe {
@@ -40,11 +52,9 @@
     }
 }
 
-@media (width > 900px) {
+@media (min-width: 900px) {
     .images {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
     }
-
 }
